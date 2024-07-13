@@ -28,6 +28,7 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 Install dependencies:
 pip install -r requirements.txt
+
 Setting Up the PostgreSQL Database
 
 
@@ -49,7 +50,7 @@ If you encounter issues, ensure PostgreSQL service is running, and check credent
 
 add .env File
 
-add the .env file in the backend directory with your PostgreSQL credentials:
+add the .env file in the backend/python directory with your PostgreSQL credentials:
 DATABASE=movies_db
 DATABASE_USERNAME=your_postgres_username
 DATABASE_PASSWORD=your_postgres_password
@@ -112,3 +113,9 @@ GET /movies: Fetch all movies from the Python service.
 POST /movies: Add a new movie by forwarding the request to the Python service.
 Environment Variables
 Ensure environment variables are correctly set in .env files for each service as mentioned above.
+
+
+
+note:
+ensure postgres database server that has the table is running 
+
